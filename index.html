@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes To Life</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="images/logo.png" alt="leaf logo"/></a>
+        </div>
+        <nav>
+            <ul id="links">
+                <li><a href="#">Take Action</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Learning Centre</a></li>
+                <li><a href="#">Donation</a></li>
+                <img src="images/close.png" alt="close icon" onclick="closeMenu()"/>     
+            </ul>
+            <img src="images/open.png" alt="open icon" onclick="openMenu()"/>
+        </nav>    
+        <button class="loginBtn">Login</button>
+    </header>
+    <!-- ------------------------------------------------------------ -->
+    <!-- ----------------------Video---------------------------------- -->
+    <!-- ------------------------------------------------------------ -->
+    <div class="container">
+        <div class="videoContainer">
+           <!-- <video src="videos/Plastic_Pollution_Video(480p).mp4" controls></video> -->
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/QQYgCxu988s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+       </div>
+    </div>
+    <!-- ------------------------------------------------------------ -->
+    <!-- ----------------------Inspirational stories----------------- -->
+    <!-- ------------------------------------------------------------ -->
+    <main class="stories">
+        <div class="card">
+                <img src="images/nationsUnite.jpg" alt="thousands of single use plastic bottles on river surface">
+            <div class="content">
+                <h3>Nations Unite against plastic pollution</h3>
+                <p>An end to plastic pollution is now in sight after countries from around the world unanimously agreed at the UN Environment Assembly to develop a legally binding treaty. Pressure has been mounting on governments to take action, given the harmful impacts of plastic pollution on people and nature.</p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/gorilla.jpg" alt="a big gorilla in jungle">
+        <div class="content">
+            <h3>Mountain gorilla numbers recover</h3>
+            <p>At one time, mountain gorillas were expected to become extinct by the end of the 20th century. However, a new study has shown that their numbers may actually be increasing for the first time in a while. </p>
+            <a href="#">Read more</a>
+        </div>
+        </div>
+            <div class="card">
+                <img src="images/Whales.jpg" alt="a few whales in water">
+            <div class="content">
+                <h3>Whale species back from the brink</h3>
+                <p>An estimated 2 million whales were hunted and killed from the 19th to the mid-20th century for their meat, oil and blubber.Shortly after, global trade of whale products was banned and limits were set on subsistence whaling.
+                </p>
+                <a href="#">Read more</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/tiger.jpg" alt="an Indian tiger sitting in the jungle">
+        <div class="content">
+            <h3>India’s wild tiger population is increasing</h3>
+            <p>India is one of 13 nations working on a common goal to double tiger numbers by 2022. It’s estimated that India’s wild tiger population has increased by 33% since 2015. </p>
+            <a href="#">Read more</a>
+        </div>
+</div>
+    </main>
+
+    <!-- ------------------------------------------------------------ -->
+    <!-- ----------------------Join our team----------------- -->
+    <!-- ------------------------------------------------------------ -->
+    <section class="joinUs">
+        <h2 class="headingJoin">Over 6 decades we are working to save our earth</h2>
+        <div class="joinUsContainer">
+            <div class="leftText">
+                <p>Find out how we have worked together to make this world a better place to live. Join our team to serve the nature and save our wildlife.</p>
+                <button>Join our team!</button>
+            </div>
+            <div class="imgRight">
+                <img src="images/deer.jpg" alt="a deer in the bushes"/>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------Image slider----------------- -->
+    <!-- ------------------------------------------------------------ -->
+    <section aria-label="wildlife and nature photos">
+        <div class="carousel">
+            <figure>
+                    <img src="images/Slide1.png" alt=""/>
+                    <img src="images/Slide2.png" alt=""/>
+                    <img src="images/Slide3.png" alt=""/>
+                    <img src="images/Slide4.png" alt=""/>
+                    <img src="images/Slide1.png" alt=""/>  
+            </figure>      
+          </div>
+      </section>
+
+      <!-- ----------------------Training----------------- -->
+    <!-- ------------------------------------------------------------ -->
+    <section aria-label="various training photos" class="trainingSection">
+        <h2>Training</h2>
+        <main class="trainingLinks">
+        <div class="trainingCard">
+            <img src="images/plantsTraining.jpg" alt="plants held in hands">
+            <div class="trainingContent">
+                <p>In this section learn all about planting trees and plants.</p>
+                <button>Learn Now</button>
+            </div>
+        </div>
+        <div class="trainingCard">
+            <img src="images/plasticTraining.jpg" alt="plastic pollution showing image">
+            <div class="trainingContent">
+                <p>How plastic use can be minimized?</p>
+                <button>Learn Now</button>
+            </div>
+        </div>
+        <div class="trainingCard">
+            <img src="images/waterTraining.jpg" alt="water flowing from a tap">
+            <div class="trainingContent">
+                <p>Learn how to save water with simple steps.</p>
+                <button>Learn Now</button>
+            </div>
+        </div>
+        <div class="trainingCard">
+            <img src="images/deforestationTraining.jpg" alt="an image showing large deforestation">
+            <div class="trainingContent">
+                <p>How deforestation be reduced with better town planning?</p>
+                <button>Learn Now</button>
+            </div>
+        </div>
+        <div class="trainingCard">
+            <img src="images/animalsTraining.jpg" alt="a baby animal is being fed">
+            <div class="trainingContent">
+                <p>Learn to take care of wild animals.</p>
+                <button>Learn Now</button>
+            </div>
+        </div>
+        <div class="trainingCard">
+            <img src="images/pollutionTraining.jpg" alt="large amout of smoke coming out of an industrial chimney">
+            <div class="trainingContent">
+                <p>Reducing the air pollution with simple lifestyle changes.</p>
+                <button>Learn Now</button>
+            </div>
+        </div>
+    </main>
+    </section>
+    <section class="subscribeSection">
+        <div class="formVideoContainer">
+            <!-- <video autoplay loop muted src="images/4K_Videos_(ULTRA_HD)__Red_Sky__Nature__Background_Videos__Non_Copyrighted_Videos(360p).mp4"></video> -->
+            <img src="images/elephantsSunset.gif"/>
+        </div>
+        <form type="submit">
+            <h2>Subscribe to our Newsaletter</h2>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <input type="submit" value="Submit"/>
+        </form>
+    </section>
+      <footer>
+              <ul class="footerLinks">
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+              <div class="footerLogo">
+                  <a href="#"><img src="images/logo.png" alt="leaf logo"/></a>
+              </div>
+              <ul class="footerLinks">
+                  <li><a href="#">Help Desk</a></li>
+                  <li><a href="#">Blog</a></li>
+              </ul>
+      </footer>
+      <script>
+          let links = document.getElementById("links");
+          function openMenu(){
+              links.style.right = "0px";
+          }
+          function closeMenu(){
+              links.style.right = "-100%";
+          }
+      </script>
+  </body>
+  </html>
+                
+                
+               
+
+               
