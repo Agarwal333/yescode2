@@ -157,20 +157,30 @@
     </section>
     <section class="subscribeSection">
         <div class="formVideoContainer">
-            <!-- <video autoplay loop muted src="images/4K_Videos_(ULTRA_HD)__Red_Sky__Nature__Background_Videos__Non_Copyrighted_Videos(360p).mp4"></video> -->
             <img src="images/elephantsSunset.gif"/>
         </div>
-        <form type="submit">
+        <div class="formContainer">
             <h2>Subscribe to our Newsaletter</h2>
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email">
-            <input type="submit" value="Submit"/>
-        </form>
+            <form action="/" type="submit">
+                <div class="inputBox">
+                    <input type="text" class="inputValue" id="firstName" name="firstName" placeholder=" " required>
+                    <label for="firstName">First Name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="text" class="inputValue" id="lastName" name="lastName" placeholder=" " required>
+                    <label for="lastName">Last Name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" class="inputValue" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+                <input class="formBtn" type="submit" value="Submit"/>
+            </form>
+        </div>
     </section>
+    <div class="bottomTrees">
+        <img src="images/trees.png" alt="trees in a row"/>
+    </div>
       <footer>
               <ul class="footerLinks">
                   <li><a href="#">Community</a></li>
