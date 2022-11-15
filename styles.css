@@ -15,6 +15,7 @@ li{
     --brightGreen: #56CD05;
     --cocoaBrown: #1E1514;
     --cream: #ECD5BB;
+    --malachite: #06F549;
 }
 body{
     overflow-x: hidden;
@@ -442,6 +443,10 @@ button:hover{
     height: auto;
     margin-bottom: -5px;
 }
+.bottomTrees img{
+    width: 100%;
+    height: 100%;
+}
 footer{
     display: flex;
     justify-content: center;
@@ -486,8 +491,15 @@ nav img{
 
 @media only screen and (max-width: 910px) {
     header{
-        display: flex;
+        /* display: flex;
         justify-content: space-between;
+        align-items: center; */
+    }
+    .logo{
+        position: absolute;
+        left: 50%;
+        right: 50%;
+        top: 0;
     }
     nav ul{
         position: fixed;
@@ -499,7 +511,7 @@ nav img{
         padding: 6rem;
         transition: all 0.5s ease-in-out;
      }
-    nav ul li{
+    nav ul li, .loginBtn{
         display: block;
         text-align: center;
         margin: 50px;
@@ -520,8 +532,8 @@ nav img{
     }
     .loginBtn{
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: -30px;
+        right: 1px;
     }
 }
 
@@ -544,4 +556,306 @@ nav img{
     .footerLogo{
         order: -1;
     }
+}
+
+
+/* ----------------------Take Action Page Styling----------------------
+-------------------------------------------------------------------- */
+.volunteer{
+    padding-top: 12rem;
+}
+.volunteer h1, .intern h1{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--cocoaBrown);
+}
+.volunteerCards, .internCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.volunteerCard, .internCard{
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    margin: 2rem;
+    cursor: pointer;
+ 
+}
+.volunteerCard img, .internCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.volunteerContent, .internContent{
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    background-color: var(--cardinGreen);
+    bottom: 0;
+    transition: all 0.3s ease-in;
+}
+.volunteerContent h3, .internCard h3{
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+    padding: 1.3rem;
+}
+.volunteerContent p, button{
+    font-size: 2rem;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+.internContent p, button{
+    font-size: 2rem;
+    visibility: hidden;
+    opacity: 0;
+    text-align: center;
+}
+.volunteerBtn{
+    margin-left: 8rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.volunteerCard:hover .volunteerContent{
+    height: 50%;
+    background-color: var(--cocoaBrown);
+}
+.volunteerCard:hover p, button{
+    visibility: visible;
+    opacity: 1;
+    color: var(--white);
+}
+.intern{
+    padding-top: 9rem;
+}
+.internCard:hover .internContent{
+    height: 50%;
+    background-color: var(--cocoaBrown);
+}
+.internCard:hover p, button{
+    visibility: visible;
+    opacity: 1;
+    color: var(--white);
+}
+.communityServices{
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+}
+.communityServices h2{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--cocoaBrown);
+}
+.communityCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.communityCard{
+    width: 250px;
+    height: 300px;
+    border: 4px solid var(--malachite);
+    border-radius: 20px;
+    margin: 30px;
+    filter: grayscale(1);
+    cursor: pointer;
+}
+.communityCard p{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: gray;
+    
+}
+.communityCard img{
+    width: 100%;
+    height: 70%;
+    object-fit: contain;
+    opacity: 1;
+    filter:grayscale(1);
+    transition: filter 0.3s;
+}
+
+.communityCard:hover img{
+    filter: grayscale(0);
+}
+.communityCard:hover p{
+    color: var(--brightGreen);
+    filter:grayscale(0);
+}
+.communityCard:hover{
+    filter: grayscale(0);
+}
+
+/* ----------------------About Us Page Styling----------------------
+-------------------------------------------------------------------- */
+/* body{
+    perspective: 10px;
+    overflow-x: hidden;
+    height: 100vh;
+    overflow-y: auto;
+}
+.aboutSection{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    
+    overflow: hidden;
+}
+
+.aboutBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+    
+.aboutSection h1, p{
+    color: var(--white);
+    font-size: 4rem;
+    z-index: 1;
+} */
+
+.aboutContent{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(images/about.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about{
+    width: 600px;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.about h1{
+    color: var(--cocoaBrown);
+    padding: 10px;
+    text-align: center;
+    font-size: 4rem;
+}
+.about p{
+    padding: 0 30px 30px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    word-spacing: 1px;
+    line-height: 40px;
+    color: var(--cocoaBrown);
+} 
+.missionContent{
+    width: 100%;
+    min-height: 600px;
+    background-image: url(images/big\ leaf.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;   /*remember to remove fixed and make it scroll in mobile*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.mission{
+    background: rgba( 255, 255, 255, 0.03 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 3rem 0;
+}
+.missionContent h1{
+    color: var(--cocoaBrown);
+    padding: 10px;
+    text-align: center;
+    font-size: 4rem;
+}
+
+.missionContent p{
+    padding: 0 30px 30px;
+    font-size: 3rem;
+    color: var(--cocoaBrown);
+}
+.ourTeam{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+.teamHeading{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--cocoaBrown);
+}
+.teamCards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.teamCard{
+    width: 300px;
+    height: 400px;
+    margin: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-self: flex-start;
+    border-inline-start: 5px solid;
+    border-block-end: 5px solid;
+    border-image-source: radial-gradient(circle at bottom left, var(--malachite), transparent 50%);
+    border-image-slice: 1;
+    padding: 10px;
+    transition: all 0.6s ease-in-out;
+    cursor: pointer;
+}
+.teamCard:hover{
+    border-image-source: radial-gradient(circle at bottom left, var(--malachite), transparent 80%);
+}
+.teamContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.teamCard img{
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+}
+.teamContent h3{
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    color: var(--cocoaBrown);
+}
+.teamContent p{
+    font-size: 2rem;
+    padding: 0 0 1rem;
+    text-align: center;
+    color: var(--cocoaBrown);
 }

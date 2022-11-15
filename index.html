@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yes To Life</title>
+    <title>Yes To Life!</title>
     <link rel="stylesheet" href="styles.css"/>
     <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,20 +14,21 @@
 <body>
     <header>
         <div class="logo">
-            <a href="#"><img src="images/logo.png" alt="leaf logo"/></a>
+            <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
         </div>
         <nav>
             <ul id="links">
-                <li><a href="#">Take Action</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="takeAction.html">Take Action</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
                 <li><a href="#">Learning Centre</a></li>
                 <li><a href="#">Donation</a></li>
-                <img src="images/close.png" alt="close icon" onclick="closeMenu()"/>     
+                <img src="images/close.png" alt="close icon" onclick="closeMenu()"/>
             </ul>
             <img src="images/open.png" alt="open icon" onclick="openMenu()"/>
         </nav>    
         <button class="loginBtn">Login</button>
     </header>
+
     <!-- ------------------------------------------------------------ -->
     <!-- ----------------------Video---------------------------------- -->
     <!-- ------------------------------------------------------------ -->
@@ -194,15 +195,9 @@
                   <li><a href="#">Blog</a></li>
               </ul>
       </footer>
-      <script>
-          let links = document.getElementById("links");
-          function openMenu(){
-              links.style.right = "0px";
-          }
-          function closeMenu(){
-              links.style.right = "-100%";
-          }
-      </script>
+
+<script src="/main.js"></script>
+
   </body>
   </html>
                 
