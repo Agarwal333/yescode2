@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "inter", serif, sans-serif;
+    scroll-behavior: smooth;
 }
 li{
     list-style: none;
@@ -92,7 +93,7 @@ ul li a:hover:after{
     width: 50%;
     transform: translateX(-100%);
 }
-button{
+button, #readStoriesBtn{
     background-color: var(--cardinGreen);
     color: var(--white);
     font-size: clamp(16px, 2vw, 30px);
@@ -130,13 +131,24 @@ button:hover{
     object-fit: cover;
     overflow-x: hidden;
 }
+.inspirationalStories{
 
+}
+.inspirationalStories h1{
+    color: var(--cocoaBrown);
+    font-size: 3rem;
+    text-align: center;
+}
+.inspirationalStories a{
+    color: var(--cocoaBrown);
+    text-decoration: none;
+}
 .stories{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 .card{
     width: 500px;
@@ -353,7 +365,6 @@ button:hover{
     padding: 0; 
     overflow: hidden;
     margin: 0;
-
 }
 .formVideoContainer img{
     width: 100%;
@@ -858,4 +869,142 @@ nav img{
     padding: 0 0 1rem;
     text-align: center;
     color: var(--cocoaBrown);
+}
+
+/* ----------------------Inspirational stories Page Styling------------
+-------------------------------------------------------------------- */
+.inspirationalStories{
+    padding-top: 100px;
+    color: var(--cocoaBrown);
+    text-align: center;
+    font-size: 4rem;
+    padding-bottom: 40px;
+}
+.story{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--cardinGreen);
+    margin-bottom: 100px;
+}
+.story h3{
+    color: var(--white);
+    font-size: 2.5rem;
+    padding: 10px;
+}
+.storyContent{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.storyContent p{
+    color: var(--white);
+    font-size: 2rem;
+    padding: 5px 50px;
+    width: 700px;
+   
+}
+.imgContainer{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+.imgContainer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 100;
+    pointer-events: none;
+    border-inline: 3px solid var(--white);
+    border-block-start: 3px solid var(--white);
+    border-block-end: 3px solid var(--cardinGreen);
+    border-radius: 10px;
+}
+
+
+/* ----------------------Donation Page Styling-----------------------
+-------------------------------------------------------------------- */
+.donationForm{
+    width: 100vw;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/bgwaterbody2.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.youCanHelp{
+    padding-top: 100px;
+    color: var(--cocoaBrown);
+    font-size: 4rem;
+    text-align: center;
+}
+.helpDonate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.helpDonateContainer{
+    margin-top: 40px;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.helpContainer1{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.layer:nth-child(1){
+    background-image:url("images/donate4.jpg");
+    width: 80%;
+    height: 100%;
+}
+.layer:nth-child(2){
+    background-image:url("images/donateRemove.png");
+    top: 100px;
+    left: 200px;
+    width: 300px;
+    height: 300px;
+}
+.layer:nth-child(3){
+    background-image:url("images/donate 2.jpg");
+    top: 400px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+.helpDonateContent{
+    width: 500px;
+}
+.helpDonateContent p{
+    font-size: 3rem;
+    color: var(--cocoaBrown);
+    text-align: left;
+    padding: 0 0 30px 0;
 }
