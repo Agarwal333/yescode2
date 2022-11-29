@@ -43,3 +43,17 @@ container.onmousemove = function(e){
     layer[2].style.transform = 'translate('+ X/100*4 +'px, '+ Y/100*4 +'px)';
 
 }
+
+
+let container2 = document.querySelector(".helpContainer2");
+let layer2 = document.querySelectorAll(".layer2");
+
+container2.onmousemove = function(e){
+    let X = e.pageX;
+    let Y = e.pageY;
+
+    layer2[0].style.transform = 'translate('+ X/100*2 +'px, '+ Y/100*2 +'px)';
+    layer2[1].style.transform = 'translate('+ X/100*4 +'px, '+ Y/100*4 +'px)';
+    layer2[2].style.transform = 'translate('+ X/100*6 +'px, '+ Y/100*6 +'px)';
+
+}

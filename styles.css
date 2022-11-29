@@ -1008,3 +1008,390 @@ nav img{
     text-align: left;
     padding: 0 0 30px 0;
 }
+
+
+
+.helpContainer2{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 100px;
+}
+.layer2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.layer2:nth-child(1){
+    background-image:url("images/trainbg2.png");
+    width: 100%;
+    height: 40%;
+}
+.layer2:nth-child(2){
+    background-image:url("images/train3.jpg");
+    top: 200px;
+    left: 200px;
+    width: 80px;
+    height: 80px;
+    z-index: -1;
+}
+.layer2:nth-child(3){
+    background-image:url("images/trainbg1.png");
+    top: 200px;
+    left: 0;
+    width: 100%;
+    height: 40%;
+}
+.helpDonateContent{
+    width: 500px;
+}
+.helpDonateContent p{
+    font-size: 3rem;
+    color: var(--cocoaBrown);
+    text-align: left;
+    padding: 0 0 30px 0;
+}
+
+hr{
+    border: 5px solid var(--cardinGreen);
+    margin: 10px;
+}
+
+.emergency{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 29px 29px 58px #bebebe,
+                inset -29px -29px 58px #ffffff;
+}
+.emergency h3, .querries h3{
+    font-size: 2.5rem;
+}
+.emergency ul li{
+    list-style-type: numbers; 
+    font-size: 2rem;
+}
+
+.querries{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 200px;
+    margin: 20px auto;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 29px 29px 58px #bebebe,
+                inset -29px -29px 58px #ffffff;
+}
+.joinUsToday{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 600px;
+    height: 400px;
+    margin: 20px auto;
+    border-radius: 50px;
+    background: #e0e0e0;
+    box-shadow: inset 29px 29px 58px #bebebe,
+                inset -29px -29px 58px #ffffff;
+}
+.joinUsToday p{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.helpBtns{
+    background-color: var(--cardinGreen);
+    color: var(--white);
+    font-size: clamp(16px, 2vw, 30px);
+    padding: 0.5rem 1.5rem;
+    margin-top: 10px;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.helpBtns:hover{
+    background-color: var(--white);
+    color: var(--cardinGreen);
+    border: 2px solid var(--cardinGreen);
+}
+
+
+/* ----------------------Learning centre Page Styling-----------------------
+-------------------------------------------------------------------- */
+
+.learningCentre{
+    text-align: center;
+    font-size: 4rem;
+    padding-top: 100px;
+    color: var(--cardinGreen);
+}
+.learningSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+.leftContentLearning{
+    width: 400px;
+}
+.leftContentLearning h3{
+    font-size: 2.5rem;
+    color: var(--cardinGreen);
+    padding: 20px 0;
+}
+.leftContentLearning p{
+    font-size: 2rem;
+    color: var(--cardinGreen);
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+.rightVideoLearning{
+    width: 400px;
+    height: 250px;
+    
+}
+.rightVideoLearning video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.leftContentLearning a{
+    background-color: var(--cardinGreen);
+    color: var(--white);
+    font-size: clamp(10px, 1vw, 20px);
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+.leftContentLearning a:hover{
+    background-color: var(--white);
+    color: var(--cardinGreen);
+    border: 2px solid var(--cardinGreen);
+}
+.imageCarousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1E1514;
+}
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: animate 30s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }   
+}
+
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(400px);
+}
+.box span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+.box span:hover img{
+    transform: translateY(-50px) scale(1.3);
+}
+
+
+
+.trainingHeading{
+    font-size: 4rem;
+    color: var(--cardinGreen);
+    text-align: center;
+    padding-top: 100px;
+}
+.trainingHeader{
+    display: flex;
+    
+    
+}
+.trainingHeader video{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(20px);
+    z-index: -1;
+}
+
+.trainingTitles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: -600px 200px 0 400px;
+}
+.trainingTitles ul{
+    position: relative;
+    transform: skewY(-15deg);
+    
+}
+.trainingTitles ul li{
+    position: relative;
+    width: 300px;
+    list-style: none;
+    padding: 20px;
+    background: var(--malachite);
+    z-index: var(--i);
+    transition: 0.5s;
+}
+.trainingTitles ul li:hover::before{
+    background: var(--cardinGreen);
+}
+.trainingTitles ul li:hover::after{
+    background: var(--cardinGreen);
+}
+.trainingTitles ul li:hover{
+    background: var(--cardinGreen);
+    transform: translateX(-50px);
+}
+.trainingTitles ul li::before{
+    content: "";
+    position: absolute;
+    background: var(--brightGreen);
+    top:0;
+    left: -40px;
+    width: 40px;
+    transform-origin: right;
+    height: 100%;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+.trainingTitles ul li::after{
+    content: "";
+    position: absolute;
+    background: var(--brightGreen);
+    top:-40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    transition: 0.5s;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+.trainingTitles ul li a{
+    text-decoration: none;
+    color: var(--cardinGreen);
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.trainingTitles ul li:hover a{
+    color: var(--white);
+}
+.trainingTitles ul li:last-child:after{
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+}
+.videoBoxContainer{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 30px 500px 500px 5px;
+    
+}
+.videoBoxContainer .cube{
+    position: absolute;
+    top:calc(50% - 200px);
+    left: calc(50% - 200px);
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+}
+.videoBoxContainer .cube div{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: rotateX(-20deg) rotateY(25deg) translate3d(-75px, -50px, 150px);
+}
+
+.videoBoxContainer .cube div span{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: #ccc;
+}
+.videoBoxContainer .cube div span:nth-child(1){
+    transform: rotateX(0deg) translate3d(0,0,100px);
+}
+.videoBoxContainer .cube div span:nth-child(2){
+    transform: rotateY(90deg) translate3d(0,0,-100px);
+}
+.videoBoxContainer .cube div span:nth-child(2) video{
+    transform: rotateY(180deg);
+}
+.videoBoxContainer .cube div span:nth-child(3){
+    transform: rotateX(90deg) translate3d(0,0,100px);
+}
+.videoBoxContainer .cube div span video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(0);
+}
+.enrollLinks{
+    margin-top: -500px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+.enrollLinks article{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

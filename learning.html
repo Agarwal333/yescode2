@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes To Life!</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+        </div>
+        <nav>
+            <ul id="links">
+                <li><a href="takeAction.html">Take Action</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="learning.html">Learning Centre</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <img src="images/close.png" alt="close icon" onclick="closeMenu()"/>
+            </ul>
+            <img src="images/open.png" alt="open icon" onclick="openMenu()"/>
+        </nav>    
+        <button class="loginBtn">Login</button>
+    </header>
+    <h1 class="learningCentre">Learning Centre</h1>
+    <section class="learningSection">
+        <div class="leftContentLearning">
+            <h3>Ocean challenges</h3>
+            <p>Enroll this course to learn about imapct of human activities on oceans.</p>
+            <a>Enroll Now</a>
+        </div>
+        <div class="rightVideoLearning">
+            <video src="videos/2.mp4" poster="images/Frame 2.png"  loop onmouseover="play();" onmouseout="pause();"></video>
+        </div>
+    </section>
+    <section class="learningSection">
+        <div class="leftContentLearning">
+            <h3>Introduction to Conservation</h3>
+            <p>Explore the key issues in conservation, gain an awareness of the problems and challenges in the world we live in.</p>
+            <a>Enroll Now</a>
+        </div>
+        <div class="rightVideoLearning">
+            <video src="videos/3.mp4" type="video/mp4" poster="images/Frame 1.png" loop onmouseover="play();" onmouseout="pause();"></video>
+        </div>
+    </section>
+    <section class="learningSection">
+        <div class="leftContentLearning">
+            <h3>Deforestation</h3>
+            <p>Learn how to reduce the effect of deforestation by simple and consistent steps.</p>
+            <a>Enroll Now</a>
+        </div>
+        <div class="rightVideoLearning">
+            <video src="videos/4.mp4" type="video/mp4" loop onmouseover="play();" onmouseout="pause();"></video>
+        </div>
+    </section>
+    <section class="learningSection">
+        <div class="leftContentLearning">
+            <h3>Conservation Project Planning</h3>
+            <p>Explore how to plan and implement an effective conservation project. </p>
+            <a>Enroll Now</a>
+        </div>
+        <div class="rightVideoLearning">
+            <video src="videos/1.mp4" type="video/mp4" poster="images/Frame 3.png" loop onmouseover="play();" onmouseout="pause();"></video>
+        </div>
+    </section>
+    <section class="imageCarousel">
+        <div class="box">
+            <span style="--i:1;"><img src="images/Frame 4.png"/></span>
+            <span style="--i:2;"><img src="images/Frame 5.png"/></span>
+            <span style="--i:3;"><img src="images/Frame 6.png"/></span>
+            <span style="--i:4;"><img src="images/Frame 7.png"/></span>
+            <span style="--i:5;"><img src="images/Frame 8.png"/></span>
+            <span style="--i:6;"><img src="images/Frame 9.png"/></span>
+            <span style="--i:7;"><img src="images/Frame 10.png"/></span>
+            <span style="--i:8;"><img src="images/Frame 11.png"/></span>
+        </div>
+    </section>
+    
+    
+    <div class="bottomTrees">
+        <img src="images/trees.png" alt="trees in a row"/>
+    </div>
+      <footer>
+              <ul class="footerLinks">
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+              <div class="footerLogo">
+                  <a href="#"><img src="images/logo.png" alt="leaf logo"/></a>
+              </div>
+              <ul class="footerLinks">
+                  <li><a href="#">Help Desk</a></li>
+                  <li><a href="#">Blog</a></li>
+              </ul>
+      </footer>
+
+<script src="/main.js"></script>
+
+  </body>
+  </html>
+                
+                
+               
+
+               

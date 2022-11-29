@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+        </div>
+        <nav>
+            <ul id="links">
+                <li><a href="takeAction.html">Take Action</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="learning.html">Learning Centre</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <img src="images/close.png" alt="close icon" onclick="closeMenu()"/>
+            </ul>
+            <img src="images/open.png" alt="open icon" onclick="openMenu()"/>
+        </nav>    
+        <button class="loginBtn">Login</button>
+    </header>
+    <h1 class="trainingHeading">Training</h1>
+    <section class="trainingHeader">
+        <video src="videos/cubevideo.mp4" autoplay="" muted="" loop=""></video>
+        <section class="trainingTitles">
+            <ul>
+                <li style ="--i:3;"><a>Online training</a></li>
+                <li style ="--i:2;"><a>Hybrid training</a></li>
+                <li style ="--i:1;"><a>In-person training</a></li>
+            </ul>
+        </section>
+        <section class="videoBoxContainer">
+            
+            <div class="cube">
+                <div>
+                    <span><video src="videos/cubevideo.mp4" autoplay="" muted="" loop=""></video></span>
+                    <span><video src="videos/cubevideo.mp4" autoplay="" muted="" loop=""></video></span>
+                    <span><video src="videos/cubevideo.mp4" autoplay="" muted="" loop=""></video></span>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section class="enrollLinks">
+        <article>
+            <p>How to rescue animals?Duration: 6 hrs, In-person</p><button>Enroll</button>
+        </article>
+        <article>
+            <p>Environmental design and planning. Duration: 300hrs, Online</p><button>Enroll</button>
+        </article>
+        <article>
+            <p>How to rescue animals? Duration: 6 hrs, Online</p><button>Enroll</button>
+        </article>
+        <article>
+            <p>How to rescue animals? Duration: 6 hrs, Hybrid</p><button>Enroll</button>
+        </article>
+        <article>
+            <p>Veterinary Assistant Duration: 120 hrs, In-person</p><button>Enroll</button>
+        </article>
+    </section>
+</body>
+</html>
