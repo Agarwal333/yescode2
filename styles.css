@@ -964,6 +964,10 @@ nav img{
     justify-content: center;
     align-items: center;
 }
+
+
+
+
 .helpContainer1{
     position: relative;
     width: 500px;
@@ -1234,6 +1238,8 @@ hr{
     transform: translateY(-50px) scale(1.3);
 }
 
+/* ----------------------Training Page Styling-----------------------
+-------------------------------------------------------------------- */
 
 
 .trainingHeading{
@@ -1241,6 +1247,12 @@ hr{
     color: var(--cardinGreen);
     text-align: center;
     padding-top: 100px;
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .trainingHeader{
     display: flex;
@@ -1384,14 +1396,132 @@ hr{
 }
 .enrollLinks{
     margin-top: -500px;
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    width: 800px;
+    margin: -500px auto 10px;
 }
+
 .enrollLinks article{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+}
+.enrollLinks article p{
+    font-size: 2rem;
+    padding: 20px;
+}
+
+
+/* ----------------------Login Page Styling-----------------------
+-------------------------------------------------------------------- */
+
+
+ .loginBgSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 800px;
+    padding-top: 10px;
+    background-color: var(--cardinGreen);
+ }
+ .loginBgSection img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: -80px;
+    object-fit: cover;
+ }
+ .loginForm{
+    width: 400px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.51);
+    border-radius: 16px;
+    
+    z-index: 1000;
+ }
+ 
+ .loginForm{
+    width: 55rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.loginForm h2{
+    padding: 4rem;
+    font-size: 3rem;
+    position: absolute;
+    top: 5%;
+    color: var(--white);
+}
+.loginForm form{
+    position: relative;
+    width: 70%;
+    margin-top: 30px;
+}
+
+.inputBox{
+    position: relative;
+    width: 100%;
+}
+.inputValue{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 3rem;
+    border-radius: 5px;
+    font-size: 3rem;
+    outline: none;
+    border: 2px solid var(--cardinGreen);
+    transition: all 0.6s;
+}
+.inputBox label{
+    font-size: 2rem;
+    position: absolute;
+    left: 15px;
+    top:15px;
+    transition: all 0.6s;
+}
+
+.inputValue:focus ~ label,
+.inputValue:not(:placeholder-shown).inputValue:not(:focus) ~ label
+{
+    color: var(--white);
+    font-size: 1.5rem;
+    top: 4px;
+    background-color: var(--cardinGreen);
+    padding: 0 5px;
+    letter-spacing: 0.2rem; 
+}
+.inputBox input:focus{
+    border-color: var(--brightGreen);
+}
+.formBtn{
+    background-color: var(--cardinGreen);
+    color: var(--white);
+    width: 16rem;
+    font-size: clamp(16px, 2vw, 30px);
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+    margin: 10px 100px 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.formBtn:hover{
+    background-color: var(--white);
+    color: var(--cardinGreen);
+    border: 2px solid var(--cardinGreen);
 }

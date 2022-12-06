@@ -57,3 +57,6 @@ container2.onmousemove = function(e){
     layer2[2].style.transform = 'translate('+ X/100*6 +'px, '+ Y/100*6 +'px)';
 
 }
+
+// loginpage cursor
+

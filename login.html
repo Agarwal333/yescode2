@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes To Life!</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+        </div>
+        <nav>
+            <ul id="links">
+                <li><a href="takeAction.html">Take Action</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="learning.html">Learning Centre</a></li>
+                <li><a href="donation.html">Donation</a></li>
+                <img src="images/close.png" alt="close icon" onclick="closeMenu()"/>
+            </ul>
+            <img src="images/open.png" alt="open icon" onclick="openMenu()"/>
+        </nav>    
+        <button class="loginBtn" onclick="window.location.href='login.html';">Login</button>
+    </header>
+    <section class="loginBgSection">
+        <div class="loginForm">
+            <h2>Let's Sign Up</h2>
+            <form action="/" type="submit">
+                <div class="inputBox">
+                    <input type="text" class="inputValue" id="fullname" name="fullname" placeholder=" " required>
+                    <label for="fullname">Full Name</label>
+                </div>
+                <div class="inputBox">
+                    <input type="email" class="inputValue" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" class="inputValue" id="password" name="password" placeholder=" " required>
+                    <label for="password">Password</label>
+                </div>
+                <input class="formBtn" type="submit" value="Submit"/>
+            </form>
+        </div>
+                <img src="images/p1.png" class="object" data-value="-2" alt=""/>
+                <img src="images/p2.png" class="object" data-value="6" alt=""/>
+                <img src="images/p3.png" class="object" data-value="4" alt=""/>
+                <img src="images/p4.png" class="object" data-value="-6" alt=""/>
+                <img src="images/p5.png" class="object" data-value="8" alt=""/>
+                <img src="images/p6.png" class="object" data-value="-5" alt=""/>    
+                <img src="images/p7.png" class="object" data-value="-8" alt=""/>  
+                <img src="images/p8.png" class="object" data-value="6" alt=""/> 
+                  
+    </section> 
+   
+    <!-- <div class="animalContainer">
+        <div class="layer1"></div>
+        <div class="layer1"></div>
+        <div class="layer1"></div>
+    </div> -->
+
+    <div class="bottomTrees">
+        <img src="images/trees.png" alt="trees in a row"/>
+    </div>
+    <footer>
+            <ul class="footerLinks">
+                <li><a href="#">Community</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="footerLogo">
+                <a href="#"><img src="images/logo.png" alt="leaf logo"/></a>
+            </div>
+            <ul class="footerLinks">
+                <li><a href="#">Help Desk</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+    </footer>
+    <script>
+
+        document.addEventListener("mousemove", parallax);
+        function parallax(e){
+            document.querySelectorAll(".object").forEach(function(move){
+                var moveValue = move.getAttribute("data-value");
+                var x = (e.clientX * moveValue) / 100;
+                var y = (e.clientY * moveValue) / 100;
+
+                move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+
+            });
+        }
+
+//         let container1 = document.querySelector(".animalContainer");
+// let layer1 = document.querySelectorAll(".layer1");
+
+// container1.onmousemove = function(e){
+//     let X = e.pageX;
+//     let Y = e.pageY;
+
+//     layer1[0].style.transform = 'translate('+ X/100*2 +'px, '+ Y/100*2 +'px)';
+//     layer1[1].style.transform = 'translate('+ X/100*4 +'px, '+ Y/100*4 +'px)';
+//     layer1[2].style.transform = 'translate('+ X/100*6 +'px, '+ Y/100*6 +'px)';
+
+// }
+    </script>
+
+  </body>
+  </html>
+                
+                
+               
+
+               
