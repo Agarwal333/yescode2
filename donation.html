@@ -10,11 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!--Gabriel font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Inter:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Inter:wght@300;400;800&display=swap" rel="stylesheet"> 
+    <!--Favicon-->
+    <link rel="Shortcut Icon" type="image/png" href="images/leafLogo.png"/>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+        <div class="logoImgandText">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+            </div>
+            <span id="yesToLife"><a href="index.html">Yes To Life!</a></span>
         </div>
         <nav>
             <ul id="links">
@@ -32,20 +44,28 @@
         <img class="backgroundWater" src="images/bgwaterbody.gif" alt="underwater life"/>
     </div> -->
     <section class="donationForm">
-        <div class="formContainer">
-            <h2>Subscribe to our Newsaletter</h2>
+        <div class="formContainerDonation">
+            <h2>Please help by donating</h2>
             <form action="/" type="submit">
-                <div class="inputBox">
-                    <input type="text" class="inputValue" id="firstName" name="firstName" placeholder=" " required>
-                    <label for="firstName">First Name</label>
+                <div class="inputBoxDonation">
+                    <input type="number" class="inputValue" id="cardNumber" name="cardNumber" placeholder=" " required>
+                    <label for="cardNumber">Card number</label>
                 </div>
-                <div class="inputBox">
-                    <input type="text" class="inputValue" id="lastName" name="lastName" placeholder=" " required>
-                    <label for="lastName">Last Name</label>
+                <div class="inputBoxDonation">
+                    <input type="text" class="inputValue" id="name" name="name" placeholder=" " required>
+                    <label for="name">Name on card</label>
                 </div>
-                <div class="inputBox">
-                    <input type="email" class="inputValue" id="email" name="email" placeholder=" " required>
-                    <label for="email">Email</label>
+                <div class="inputBoxDonation">
+                    <input type="number" class="inputValue" id="expiryDate" name="expiryDate" placeholder=" " required>
+                    <label for="expiryDate">Expiry date</label>
+                </div>
+                <div class="inputBoxDonation">
+                    <input type="password" class="inputValue" id="secretNumber" name="secretNumber" placeholder=" " required>
+                    <label for="secretNumber">Secret number</label>
+                </div>
+                <div class="inputBoxDonation">
+                    <input type="number" class="inputValue" id="amount" name="amount" placeholder=" " required>
+                    <label for="amount">Amount</label>
                 </div>
                 <input class="formBtn" type="submit" value="Submit"/>
             </form>
@@ -53,7 +73,7 @@
     </section>
     
     <div class="bottomTrees">
-        <img src="images/trees.png" alt="trees in a row"/>
+        <img src="images/treeline1.png" alt="trees in a row"/>
     </div>
       <footer>
               <ul class="footerLinks">
@@ -61,15 +81,16 @@
                   <li><a href="#">Contact Us</a></li>
               </ul>
               <div class="footerLogo">
-                  <a href="#"><img src="images/logo.png" alt="leaf logo"/></a>
+                  <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
               </div>
               <ul class="footerLinks">
-                  <li><a href="#">Help Desk</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="help.html">Help Desk</a></li>
+                  <li><a href="inspirations.html">Blog</a></li>
               </ul>
       </footer>
 
-<script src="/main.js"></script>
+<script src="/main.js">
+</script>
 
   </body>
   </html>

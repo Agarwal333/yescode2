@@ -32,6 +32,11 @@ header{
     position: fixed;
     z-index: 1000;
 }
+.logoImgandText{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .logo{
     width: 60px;
     height: 60px;
@@ -51,12 +56,23 @@ header{
     box-shadow: 0 0 80px 3px #62f458;
     background-color: var(--white);
 }
+#yesToLife a{
+    font-family: "gabriela", serif, sans-serif;
+    color: var(--white);
+    font-size: 2.5rem;
+}
 nav ul li{
     display: inline-block;
     padding: 0 2rem;    
 }
 .links{
     align-items: center;
+}
+nav ul li a.active{
+    color: var(--cardinGreen);
+    background-color: var(--white);
+    padding: 10px;
+    border-radius: 10px;
 }
 a{
     color: var(--white);
@@ -134,9 +150,9 @@ button:hover{
 .inspirationalStories{
 
 }
-.inspirationalStories h1{
+.inspirationalStories h1 a{
     color: var(--cocoaBrown);
-    font-size: 3rem;
+    font-size: 4rem;
     text-align: center;
 }
 .inspirationalStories a{
@@ -298,6 +314,10 @@ button:hover{
 .trainingSection h2{
     font-size: 3rem;
     margin-top: 4rem;
+}
+.trainingSection h2 a{
+    font-size: 4rem;
+    color: var(--cocoaBrown);
 }
 .trainingLinks{
     display: flex;
@@ -507,10 +527,11 @@ nav img{
         align-items: center; */
     }
     .logo{
-        position: absolute;
+        /* position: absolute;
         left: 50%;
         right: 50%;
-        top: 0;
+        top: 0; */
+        display: none;
     }
     nav ul{
         position: fixed;
@@ -544,7 +565,7 @@ nav img{
     .loginBtn{
         position: absolute;
         top: -30px;
-        right: 1px;
+        right: 20%;
     }
 }
 
@@ -709,38 +730,6 @@ nav img{
 
 /* ----------------------About Us Page Styling----------------------
 -------------------------------------------------------------------- */
-/* body{
-    perspective: 10px;
-    overflow-x: hidden;
-    height: 100vh;
-    overflow-y: auto;
-}
-.aboutSection{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    
-    overflow: hidden;
-}
-
-.aboutBg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    pointer-events: none;
-}
-    
-.aboutSection h1, p{
-    color: var(--white);
-    font-size: 4rem;
-    z-index: 1;
-} */
 
 .aboutContent{
     width: 100%;
@@ -934,6 +923,12 @@ nav img{
 
 /* ----------------------Donation Page Styling-----------------------
 -------------------------------------------------------------------- */
+.full-landing-image{
+    width: 100%;
+    height: 100vh;
+    background: url('https://i.postimg.cc/J07vSC9q/hero-background.jpg') no-repeat center;
+    background-size: cover;
+  }
 .donationForm{
     width: 100vw;
     height: 100vh;
@@ -944,6 +939,109 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.formContainerDonation{
+    width: 60rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin: 0;
+    position: relative;
+}
+.formContainerDonation h2{
+    padding: 4rem;
+    font-size: 3rem;
+    position: absolute;
+    top: 0.5%;
+    color: var(--white);
+}
+.formContainerDonation form{
+    position: relative;
+    width: 60%;
+    margin-top: 30px;
+}
+
+.inputBoxDonation{
+    position: relative;
+    width: 100%;
+    height: 80px;
+}
+/* Chrome, Safari, Edge, Opera to remove arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox to remove arrows*/
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.inputBoxDonation:nth-child(3) {
+    width: 40%;
+    display: inline-block;
+}
+.inputBoxDonation:nth-child(4){
+    width: 50%;
+    display: inline-block;
+    margin-left: 30px;
+}
+.inputValue{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 3rem;
+    border-radius: 5px;
+    font-size: 3rem;
+    outline: none;
+    border: 2px solid var(--cardinGreen);
+    transition: all 0.6s;
+}
+.inputBoxDonation label{
+    font-size: 2rem;
+    position: absolute;
+    left: 15px;
+    top:15px;
+    transition: all 0.6s;
+}
+
+.inputValue:focus ~ label,
+.inputValue:not(:placeholder-shown).inputValue:not(:focus) ~ label
+{
+    color: var(--white);
+    font-size: 1.5rem;
+    top: 4px;
+    background-color: var(--cardinGreen);
+    padding: 0 5px;
+    letter-spacing: 0.2rem; 
+}
+.inputBoxDonation input:focus{
+    border-color: var(--brightGreen);
+}
+.formBtn{
+    background-color: var(--cardinGreen);
+    color: var(--white);
+    width: 16rem;
+    font-size: clamp(16px, 2vw, 30px);
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    border-radius: 1.5rem;
+    margin: 10px 100px 0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.formBtn:hover{
+    background-color: var(--white);
+    color: var(--cardinGreen);
+    border: 2px solid var(--cardinGreen);
 }
 .youCanHelp{
     padding-top: 100px;
@@ -1142,7 +1240,7 @@ hr{
     text-align: center;
     font-size: 4rem;
     padding-top: 100px;
-    color: var(--cardinGreen);
+    color: var(--cocoaBrown);
 }
 .learningSection{
     display: flex;
@@ -1197,6 +1295,19 @@ hr{
     justify-content: center;
     min-height: 100vh;
     background-color: #1E1514;
+    position: relative;
+}
+.imageCarousel h1{
+    color: white;
+    font-family: "gabriela", serif, sans-serif;
+   position: absolute;
+   bottom: 60px;
+   font-size: 2.5rem;
+   
+   
+   background-color: #1E1514;
+   text-shadow: rgba(209, 204, 203, 0.2) 3px 2px 3px;
+    z-index: 1000;
 }
 .box{
     position: relative;
@@ -1232,6 +1343,7 @@ hr{
     height: 100%;
     object-fit: cover;
     cursor: pointer;
+    border-radius: 10px;
     transition: all 1s ease-in-out;
 }
 .box span:hover img{
@@ -1255,9 +1367,7 @@ hr{
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 .trainingHeader{
-    display: flex;
-    
-    
+    display: flex;   
 }
 .trainingHeader video{
     position: absolute;
@@ -1269,13 +1379,19 @@ hr{
     filter: blur(20px);
     z-index: -1;
 }
+.trainingHeroContainer{
+    width: 600px;
+    text-align: center;
+    margin-left: 200px;
+}
 
 .trainingTitles{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: -600px 200px 0 400px;
+    margin: -100px 200px 0 400px;
+    z-index: -10;
 }
 .trainingTitles ul{
     position: relative;
@@ -1342,8 +1458,7 @@ hr{
     position: relative;
     width: 100%;
     height: 100vh;
-    margin: 30px 500px 500px 5px;
-    
+    margin: -650px 500px 500px 500px;   
 }
 .videoBoxContainer .cube{
     position: absolute;
@@ -1393,6 +1508,7 @@ hr{
     height: 100%;
     object-fit: cover;
     filter: blur(0);
+    border-radius: 10px;
 }
 .enrollLinks{
     margin-top: -500px;

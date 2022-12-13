@@ -1,5 +1,22 @@
+// for active link
+const activePage = window.location.pathname;
+const navLinks = document.querySelectorAll("nav a");
+
+console.log(navLinks)
+navLinks.forEach(link => {
+    if(link.href.includes(`${activePage}`)){
+        link.classList.add("active");
+    }
+})
 
 
+
+
+
+
+
+
+// for menu button
 
 let links = document.getElementById("links");
           function openMenu(){
@@ -30,7 +47,7 @@ let links = document.getElementById("links");
 
 // }
 
-
+// for login page
 let container = document.querySelector(".helpContainer1");
 let layer = document.querySelectorAll(".layer");
 
@@ -58,5 +75,5 @@ container2.onmousemove = function(e){
 
 }
 
-// loginpage cursor
+
 

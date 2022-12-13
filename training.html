@@ -10,11 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!--Gabriel font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Inter:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Inter:wght@300;400;800&display=swap" rel="stylesheet"> 
+    <!--Favicon-->
+    <link rel="Shortcut Icon" type="image/png" href="images/leafLogo.png"/>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+        <div class="logoImgandText">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+            </div>
+            <span id="yesToLife"><a href="index.html">Yes To Life!</a></span>
         </div>
         <nav>
             <ul id="links">
@@ -31,15 +43,15 @@
     <h1 class="trainingHeading">Training</h1>
     <section class="trainingHeader">
         <video src="videos/cubevideo.mp4" autoplay="" muted="1" loop=""></video>
+        <section class="trainingHeroContainer">
         <section class="trainingTitles">
             <ul>
-                <li style ="--i:3;"><a>Online training</a></li>
-                <li style ="--i:2;"><a>Hybrid training</a></li>
-                <li style ="--i:1;"><a>In-person training</a></li>
+                <li style ="--i:3;"><a href="login.html">Online training</a></li>
+                <li style ="--i:2;"><a href="login.html">Hybrid training</a></li>
+                <li style ="--i:1;"><a href="login.html">In-person training</a></li>
             </ul>
         </section>
         <section class="videoBoxContainer">
-            
             <div class="cube">
                 <div>
                     <span><video src="videos/cubevideo.mp4" autoplay="" muted="" loop=""></video></span>
@@ -49,25 +61,26 @@
             </div>
         </section>
     </section>
+    </section>
     <section class="enrollLinks">
             <article>
-                <p>How to rescue animals? Duration: 6 hrs, In-person</p><button>Enroll</button>
+                <p>How to rescue animals? Duration: 6 hrs, In-person</p><button onclick="window.location.href='login.html';">Enroll</button>
             </article>
             <article>
-                <p>Environmental design and planning. Duration: 300hrs, Online</p><button>Enroll</button>
+                <p>Environmental design and planning. Duration: 300hrs, Online</p><button onclick="window.location.href='login.html';">Enroll</button>
             </article>
             <article>
-                <p>How to rescue animals? Duration: 6 hrs, Online</p><button>Enroll</button>
+                <p>How to rescue animals? Duration: 6 hrs, Online</p><button onclick="window.location.href='login.html';">Enroll</button>
             </article>
             <article>
-                <p>How to rescue animals? Duration: 6 hrs, Hybrid</p><button>Enroll</button>
+                <p>How to rescue animals? Duration: 6 hrs, Hybrid</p><button onclick="window.location.href='login.html';">Enroll</button>
             </article>
             <article>
-                <p>Veterinary Assistant Duration: 120 hrs, In-person</p><button>Enroll</button>
+                <p>Veterinary Assistant Duration: 120 hrs, In-person</p><button onclick="window.location.href='login.html';">Enroll</button>
             </article>
     </section>
     <div class="bottomTrees">
-        <img src="images/trees.png" alt="trees in a row"/>
+        <img src="images/treeline1.png" alt="trees in a row"/>
     </div>
       <footer>
               <ul class="footerLinks">
@@ -75,11 +88,11 @@
                   <li><a href="#">Contact Us</a></li>
               </ul>
               <div class="footerLogo">
-                  <a href="#"><img src="images/logo.png" alt="leaf logo"/></a>
+                  <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
               </div>
               <ul class="footerLinks">
-                  <li><a href="#">Help Desk</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="help.html">Help Desk</a></li>
+                  <li><a href="inspirations.html">Blog</a></li>
               </ul>
       </footer>
 </body>

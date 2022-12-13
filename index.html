@@ -10,11 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <!--Gabriel font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Inter:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Inter:wght@300;400;800&display=swap" rel="stylesheet"> 
+    <!--Favicon-->
+    <link rel="Shortcut Icon" type="image/png" href="images/leafLogo.png"/>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+        <div class="logoImgandText">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
+            </div>
+            <span id="yesToLife" class=""><a href="index.html" id="yes1">Yes To Life!</a></span>
         </div>
         <nav>
             <ul id="links">
@@ -49,7 +61,7 @@
                     <div class="content">
                         <h3>Nations Unite against plastic pollution</h3>
                         <p>An end to plastic pollution is now in sight after countries from around the world unanimously agreed at the UN Environment Assembly to develop a legally binding treaty. Pressure has been mounting on governments to take action, given the harmful impacts of plastic pollution on people and nature.</p>
-                        <a href="#">Read more</a>
+                        <a href="inspirations.html#nationsUnite">Read more</a>
                     </div>
                 </div>
                 <div class="card">
@@ -57,7 +69,7 @@
                 <div class="content">
                     <h3>Mountain gorilla numbers recover</h3>
                     <p>At one time, mountain gorillas were expected to become extinct by the end of the 20th century. However, a new study has shown that their numbers may actually be increasing for the first time in a while. </p>
-                    <a href="#">Read more</a>
+                    <a href="inspirations.html#gorilla">Read more</a>
                 </div>
                 </div>
                     <div class="card">
@@ -66,7 +78,7 @@
                         <h3>Whale species back from the brink</h3>
                         <p>An estimated 2 million whales were hunted and killed from the 19th to the mid-20th century for their meat, oil and blubber.Shortly after, global trade of whale products was banned and limits were set on subsistence whaling.
                         </p>
-                        <a href="#">Read more</a>
+                        <a href="inspirations.html#whales">Read more</a>
                     </div>
                 </div>
                 <div class="card">
@@ -74,7 +86,7 @@
                 <div class="content">
                     <h3>India’s wild tiger population is increasing</h3>
                     <p>India is one of 13 nations working on a common goal to double tiger numbers by 2022. It’s estimated that India’s wild tiger population has increased by 33% since 2015. </p>
-                    <a href="#">Read more</a>
+                    <a href="inspirations.html#tiger">Read more</a>
                 </div>
         </div>
             </main>
@@ -114,7 +126,7 @@
       <!-- ----------------------Training----------------- -->
     <!-- ------------------------------------------------------------ -->
     <section aria-label="various training photos" class="trainingSection">
-        <h2>Training</h2>
+        <h2><a href="training.html">Training</a></h2>
         <main class="trainingLinks">
         <div class="trainingCard">
             <img src="images/plantsTraining.jpg" alt="plants held in hands">
@@ -127,7 +139,7 @@
             <img src="images/plasticTraining.jpg" alt="plastic pollution showing image">
             <div class="trainingContent">
                 <p>How plastic use can be minimized?</p>
-                <button>Learn Now</button>
+                <button onclick="window.location.href='training.html';">Learn Now</button>
             </div>
         </div>
         <div class="trainingCard">
@@ -184,7 +196,7 @@
         </div>
     </section>
     <div class="bottomTrees">
-        <img src="images/trees.png" alt="trees in a row"/>
+        <img src="images/treeline1.png" alt="trees in a row"/>
     </div>
       <footer>
               <ul class="footerLinks">
@@ -192,11 +204,11 @@
                   <li><a href="#">Contact Us</a></li>
               </ul>
               <div class="footerLogo">
-                  <a href="#"><img src="images/logo.png" alt="leaf logo"/></a>
+                  <a href="index.html"><img src="images/logo.png" alt="leaf logo"/></a>
               </div>
               <ul class="footerLinks">
-                  <li><a href="#">Help Desk</a></li>
-                  <li><a href="#">Blog</a></li>
+                  <li><a href="help.html">Help Desk</a></li>
+                  <li><a href="inspirations.html">Blog</a></li>
               </ul>
       </footer>
 
